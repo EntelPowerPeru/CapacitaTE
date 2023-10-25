@@ -1,5 +1,5 @@
 const VARIABLES = {
-    api_url: "https://script.google.com/macros/s/AKfycbyBb2hfMmlrkv4qcXSbTvVzkS-pCByimoGb13Jwb6UG1YSJFAy2JKwv40ugo0_POkCKbw/exec"
+    api_url: "https://script.google.com/macros/s/AKfycbzOkYmtHYMSy8IgW1HVLZt7WxDlFVu5YApuLrH0IoL4rqnAlkEfc_gGTzx2v63hwACT/exec"
 };
 
 const INICIAR_COMPONENTES = {
