@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/register.css" />
+</head>
+
+<body class="background_primary">
+    <div class="container h-100">
+        <div class="row justify-content-sm-center h-100">
+            <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+                <div class="d-flex justify-content-center align-items-center my-5">
+                    <span style="font-size: 4rem; font-weight: 500;" class="text-white me-2">Capacitat</span>
+
+                    <img src="./img/logo.png" alt="logo" width="80">
+                </div>
+
+                <div class="card shadow-lg">
+                    <div class="card-body p-5">
+                        <h1 class="fs-4 card-title fw-bold mb-4">Registrarse</h1>
+
+                        <form method="post" autocomplete="off" id="form_registrar_usuario">
+                            <div class="mb-3">
+                                <label class="mb-2 text-muted">Nombres</label>
+
+                                <input type="text" name="nombres" class="form-control upper" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="mb-2 text-muted">Apellidos</label>
+
+                                <input type="text" name="apellidos" class="form-control upper" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="mb-2 text-muted">Correo</label>
+
+                                <input type="email" name="correo" class="form-control lower" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="mb-2 text-muted">Cargo</label>
+
+                                <select name="cargo" class="form-select">
+                                    <option value="" selected>SELECCIONE</option>
+                                    <option value="GERENTE">GERENTE</option>
+                                    <option value="SUPERVISOR">SUPERVISOR</option>
+                                    <option value="JEFE COORDINADOR">JEFE COORDINADOR</option>
+                                    <option value="GERENTE SSNN">GERENTE SSNN</option>
+                                    <option value="GERENTE ENTEL">GERENTE ENTEL</option>
+                                    <option value="ENTRENAMIENTO">ENTRENAMIENTO</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="mb-2 text-muted">Usuario</label>
+
+                                <input type="text" name="usuario" class="form-control" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="mb-2 text-muted">Contraseña</label>
+
+                                <input type="password" name="contrasenia" class="form-control" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="mb-2 text-muted">Volver a introducir la contraseña</label>
+
+                                <input type="password" name="contrasenia_repetir" class="form-control" />
+                            </div>
+
+                            <p class="form-text text-muted mb-3">
+                                Al registrarse podrá acceder al sistema.
+                            </p>
+
+                            <div class="align-items-center d-flex">
+                                <button type="button" class="btn btn-primary ms-auto" id="btn_registrar_usuario">
+                                    <span class="btn-label">Registrarme</span>
+                                    <span class="spinner-border spinner-border-sm btn-spinner"></span>
+                                    <span class="visually-hidden btn-spinner-alt ">Cargando...</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="card-footer py-3 border-0">
+                        <div class="text-center">
+                            ¿Ya tiene una cuenta? <a href="login.html" class="text-dark">Iniciar sesión</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5 text-white">
+                    Copyright © 2023 — CapacitaTE
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/register.js"></script>
+</body>
+
+</html>
